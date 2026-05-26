@@ -8,7 +8,7 @@ declare const process: { env?: { [key: string]: string | undefined } }
 
 export function createServerSupabaseClient() {
   return createClient(
-    process.env?.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env?.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    "https://school-coop.supabase.co",
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpX..."
   )
 }
